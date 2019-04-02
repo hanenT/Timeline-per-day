@@ -1,0 +1,113 @@
+.list-link{
+  animation: list-link 5s infinite linear;
+  position:relative;
+  color: blue;
+  flex-direction: space-around;
+  background: white;
+  /* width: 300px; */
+  font-family: cursive;
+}
+
+@keyframes list-link {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+    }
+/* @import 'https://fonts.googleapis.com/css?family=Lato:100, 300, 400, 700, 900'; */
+
+.TimelineNav {
+    text-align: center;
+    font-family: cursive;
+    position: relative;
+    height: 100px;
+  }
+  
+ 
+    .navMenu {
+      /* position: absolute; */
+      --webkit-transform: translateX(-50%);
+      /* transform: translateX(-50%); */
+      /* display: -webkit-flex; */
+      display: flex;
+      /* -webkit-flex-direction: row; */
+      /* flex-direction: row; */
+      width: 50%;
+      left: 420px;
+      position: absolute;
+      opacity: 1;
+  }
+  
+  .navMenu > * {
+    flex: 1;
+    width: 100%;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font: 20px cursive;
+    color: white;
+    margin: 1em;
+    padding: 1em;
+    background-color: blue;
+  }
+  
+  a:hover {
+    color: blue;
+    background: white;
+    border: blue solid 2px;
+    -webkit-box-shadow: 0px  -2px  33px 0px rgba(0,0,255,0.71);
+    -moz-box-shadow: 0px  -2px  33px 0px rgba(0,0,255,0.71);
+    box-shadow: 0px -2px  33px 0px rgba(0,0,255,0.71);
+    font-family: cursive;
+  
+
+  }
+  a:active {
+    color: blue;
+    background: white;
+    border: blue solid 2px;
+    -webkit-box-shadow: 0px  -2px  33px 0px rgba(0,0,255,0.71);
+    -moz-box-shadow: 0px  -2px  33px 0px rgba(0,0,255,0.71);
+    box-shadow: 0px -2px  33px 0px rgba(0,0,255,0.71);
+    font-family: cursive;
+    
+    
+  }
+  
+  .displayResult {
+    left: 100%;
+    opacity: .1;
+    transition: all 0.5s ease;
+  }
+  
+  .displayResult.fade {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    opacity: 1;
+  }
+  
+  /* .displayResult > div {
+    background-color: #2CCF6A;
+    margin: .5em;
+    padding: .5em;
+  } */
+  
+  .navMenu.fade {
+    opacity: 0.01;
+    left: -50%;
+    transition: all 1s ease;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    background-color: azure;
+  }
+  
+  
+  
